@@ -21,4 +21,11 @@ There's also some features that aren't required but would be awesome to have. Th
 - A speaker that doesn't abuse the battery would be awesome
 - A cool looking enclosure for the hardware
 
+Here's some images of the PCB:
+<img width="605" height="614" alt="image" src="https://github.com/user-attachments/assets/4d03de2f-e863-4640-96e6-699989aea6a8" />
+<img width="1071" height="767" alt="PNG image" src="https://github.com/user-attachments/assets/6fa31b7f-4044-477d-8a30-5af5c745a726" />
+
+
+
+
 
