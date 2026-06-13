@@ -4,7 +4,7 @@ Project Recall is an early stage Alzhimers detection device. It features an E-in
 
 Why Build This:
 
-Millions suffer from Alzhimers, but if detected and treated early enough, the disease is preventable. My friendS Subha & eRIC, is working on research that uses machine learning and an extensive database to detect Alzhiemers in patients with high a high rate of accuracy. However, to do so he needs to have a way to monitor a patient's voice throughout the day so he can use his algo to see if the patient is at risk for Alzhimers. Unfortunately, Subha & Eric aren't too well versed in hardware design, so I'm hoping to design a solution to his problem.
+Millions suffer from Alzhimers, but if detected and treated early enough, the disease is preventable. My friends Subha & Eric, is working on research that uses machine learning and an extensive database to detect Alzhiemers in patients with high a high rate of accuracy. However, to do so he needs to have a way to monitor a patient's voice throughout the day so he can use his algo to see if the patient is at risk for Alzhimers. Unfortunately, Subha & Eric aren't too well versed in hardware design, so I'm hoping to design a solution to his problem.
 
 Criteria:
 
