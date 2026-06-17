@@ -6,6 +6,8 @@ Why Build This:
 
 Millions suffer from Alzhimers, but if detected and treated early enough, the disease is preventable. My friends Subha & Eric, are working on research that uses machine learning and an extensive database to detect Alzhiemers in patients with high a high rate of accuracy. However, to do so he needs to have a way to monitor a patient's voice throughout the day so he can use his algo to see if the patient is at risk for Alzhimers. Unfortunately, Subha & Eric aren't too well versed in hardware design, so I'm hoping to design a solution to his problem.
 
+This project is not dedicated to actually impelmenting their machine learning, rather the hardware and pipeline. The software doesn't do any analysis, rather just gives the nessecary data stream for Subha & Eric to work with.
+
 Criteria:
 
 There's a couple things I was lloking for when designing the project + some other features that would be awesome to have. The nessecary features are as follows
