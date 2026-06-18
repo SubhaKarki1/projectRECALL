@@ -1,0 +1,22 @@
+# West / NCS workspace (cloned by west update)
+bootloader/
+modules/
+nrfxlib/
+tools/
+zephyr/
+nrf/
+.west/
+
+# Build artifacts
+build/
+**/build/
+*.o
+*.a
+*.elf
+*.hex
+*.bin
+*.map
+
+# DFU signing keys (generate locally)
+project_recall/dfu/*.pem
+project_recall/dfu/*.pub

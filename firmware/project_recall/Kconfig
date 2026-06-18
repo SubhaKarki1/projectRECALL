@@ -1,0 +1,64 @@
+mainmenu "Project Recall"
+
+config RECALL_SAMPLE_RATE_HZ
+	int "I2S capture sample rate"
+	default 32000
+
+config RECALL_OUTPUT_RATE_HZ
+	int "Output sample rate"
+	default 16000
+
+config RECALL_ADPCM_BLOCK_MS
+	int "ADPCM block ms"
+	default 20
+
+config RECALL_PCM_BLOCK_SAMPLES
+	int "Samples per ADPCM block"
+	default 320
+
+config RECALL_COMPRESSED_RING_SIZE
+	int "Compressed ring buffer bytes"
+	default 4096
+
+config RECALL_ENABLE_PCM_RTT_DUMP
+	bool "PCM RTT dump"
+	default n
+
+config RECALL_PHASE
+	int "Build phase"
+	default 8
+	range 0 8
+
+config RECALL_FW_VERSION_MAJOR
+	int "Version major"
+	default 0
+
+config RECALL_FW_VERSION_MINOR
+	int "Version minor"
+	default 1
+
+config RECALL_FW_VERSION_PATCH
+	int "Version patch"
+	default 0
+
+config RECALL_HEARTBEAT_INTERVAL_SEC
+	int "Heartbeat seconds"
+	default 30
+
+config RECALL_LOW_BATTERY_MV
+	int "Low battery mV"
+	default 3500
+
+config RECALL_CUTOFF_BATTERY_MV
+	int "Cutoff mV"
+	default 3300
+
+config RECALL_VBAT_DIVIDER_NUM
+	int "VBAT divider num"
+	default 2
+
+config RECALL_VBAT_DIVIDER_DEN
+	int "VBAT divider den"
+	default 1
+
+source "Kconfig.zephyr"

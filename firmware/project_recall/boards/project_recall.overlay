@@ -1,0 +1,103 @@
+&pinctrl {
+	i2s0_default: i2s0_default {
+		group1 {
+			psels = <NRF_PSEL(I2S_SCK_M, 0, 7)>,
+				<NRF_PSEL(I2S_LRCK_M, 1, 9)>,
+				<NRF_PSEL(I2S_SDOUT, 0, 6)>,
+				<NRF_PSEL(I2S_SDIN, 0, 8)>;
+		};
+	};
+
+	spi1_default: spi1_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_SCK, 0, 24)>,
+				<NRF_PSEL(SPIM_MOSI, 1, 0)>;
+		};
+	};
+
+	spi2_default: spi2_default {
+		group1 {
+			psels = <NRF_PSEL(SPIM_MOSI, 0, 20)>;
+		};
+	};
+};
+
+&i2s0 {
+	status = "okay";
+	pinctrl-0 = <&i2s0_default>;
+	pinctrl-names = "default";
+};
+
+&spi1 {
+	status = "disabled";
+};
+
+&spi2 {
+	compatible = "nordic,nrf-spim";
+	status = "okay";
+	pinctrl-0 = <&spi2_default>;
+	pinctrl-names = "default";
+
+	led_strip: ws2812@0 {
+		compatible = "worldsemi,ws2812-spi";
+		reg = <0>;
+		spi-max-frequency = <6400000>;
+		chain-length = <1>;
+		color-mapping = <LED_COLOR_ID_GREEN LED_COLOR_ID_RED LED_COLOR_ID_BLUE>;
+		spi-one-frame = <0x70>;
+		spi-zero-frame = <0x40>;
+		reset-delay = <80>;
+	};
+};
+
+/ {
+	aliases {
+		led-strip = &led_strip;
+	};
+
+	chosen {
+		zephyr,console = &cdc_acm_uart0;
+	};
+
+	recall_hw {
+		compatible = "gpio-leds";
+		amp_en: amp_en {
+			gpios = <&gpio0 3 GPIO_ACTIVE_HIGH>;
+			label = "AMP enable";
+		};
+	};
+
+	recall_keys {
+		compatible = "gpio-keys";
+		user_btn: user_btn {
+			gpios = <&gpio0 18 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+			label = "User button";
+		};
+	};
+
+	zephyr,user {
+		io-channels = <&adc 7>;
+	};
+};
+
+&adc {
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	channel@7 {
+		reg = <7>;
+		zephyr,gain = "ADC_GAIN_1_6";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME(ADC_ACQ_TIME_MICROSECONDS, 40)>;
+		zephyr,input-positive = <NRF_SAADC_AIN7>;
+		zephyr,resolution = <12>;
+	};
+};
+
+&usbd {
+	status = "okay";
+	cdc_acm_uart0: cdc_acm_uart0 {
+		compatible = "zephyr,cdc-acm-uart";
+	};
+};

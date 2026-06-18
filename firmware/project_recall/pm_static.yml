@@ -1,0 +1,46 @@
+mcuboot:
+  address: 0x0
+  size: 0xC000
+  region: flash_primary
+
+mcuboot_pad:
+  address: 0xC000
+  size: 0x200
+  region: flash_primary
+
+app:
+  address: 0xC200
+  size: 0x76000
+  region: flash_primary
+
+app_secondary:
+  address: 0x82200
+  size: 0x76000
+  region: flash_primary
+
+storage:
+  address: 0xF8200
+  size: 0x7E00
+  region: flash_primary
+
+nrf52840dk_nrf52840:
+  mcuboot:
+    address: 0x0
+    size: 0xC000
+    region: flash_primary
+  mcuboot_pad:
+    address: 0xC000
+    size: 0x200
+    region: flash_primary
+  app:
+    address: 0xC200
+    size: 0x76000
+    region: flash_primary
+  app_secondary:
+    address: 0x82200
+    size: 0x76000
+    region: flash_primary
+  storage:
+    address: 0xF8200
+    size: 0x7E00
+    region: flash_primary
