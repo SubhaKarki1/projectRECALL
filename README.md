@@ -44,4 +44,7 @@ And here's the final for the project (pdf avaibile in repo)
 
 <img width="1545" height="2000" alt="move (4)" src="https://github.com/user-attachments/assets/afec2795-0711-4249-a49d-9db3bffa3a3f" />
 
+AI Usage:
+
+There wasn't any singificant AI usage in terms of the hardware. However, I did have my agent go over all my firmware, where it noticed soem pretty big issues and went ahead and fixed them.
 
