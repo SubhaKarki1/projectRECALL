@@ -39,3 +39,7 @@ There's also some wiring off PCB, you can find a diagram of that here:
 
 <img width="590" height="501" alt="image" src="https://github.com/user-attachments/assets/75c8cea8-9df4-422c-b6c5-25198d2eccee" />
 
+
+And here's the poster for the project:
+[move (1).pdf](https://github.com/user-attachments/files/29077986/move.1.pdf)
+
