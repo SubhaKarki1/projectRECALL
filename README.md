@@ -40,7 +40,7 @@ https://cad.onshape.com/documents/2ca69e5fab76ae3f99f92d8b/w/827e84dda2547ca1be5
 
 ## Device Images
 
-Add photos of the completed device here.
+<img width="722" height="458" alt="Screenshot 2026-07-23 at 2 48 29 PM" src="https://github.com/user-attachments/assets/be5f8a20-dd63-4599-87c9-a2f53ceb7e2c" />
 
 ## PCB Design
 
