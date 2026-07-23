@@ -44,15 +44,16 @@ https://cad.onshape.com/documents/2ca69e5fab76ae3f99f92d8b/w/827e84dda2547ca1be5
 
 ## PCB Design
 
-Add PCB images here.
+<img width="603" height="607" alt="Screenshot 2026-07-23 at 2 49 39 PM" src="https://github.com/user-attachments/assets/05b33b31-1ea3-49ad-ae10-b183145c7b58" />
+
+<img width="719" height="653" alt="Screenshot 2026-07-23 at 2 49 49 PM" src="https://github.com/user-attachments/assets/540baf4f-cace-448e-b0b6-102e2f5b2fac" />
+
+
 
 ## Wiring Diagram
 
-Add the off-PCB wiring diagram here.
+<img width="584" height="499" alt="Screenshot 2026-07-23 at 2 52 25 PM" src="https://github.com/user-attachments/assets/366d69e3-b14b-4c7a-9d9f-c9e5c2b852db" />
 
-## Final Project Poster
-
-The final project poster is available as a PDF in this repository.
 
 ## AI Usage
 
