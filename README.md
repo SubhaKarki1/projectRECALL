@@ -1,10 +1,10 @@
 # Project RECALL
 
-Project RECALL is an early-stage Alzheimer’s risk detection device designed to collect speech data throughout a user’s daily life. The device features an e-ink display, microphone, rechargeable battery, and custom hardware that streams voice data to an iPhone for future analysis.
+Project RECALL is an early-stage dementia risk detection device designed to collect speech data throughout a user’s daily life. The device features an e-ink display, microphone, rechargeable battery, and custom hardware that streams voice data to an iPhone for future analysis.
 
 ## Why This Was Made
 
-Millions of people are affected by Alzheimer’s disease, and early detection can make a major difference in treatment planning and long-term outcomes. Project RECALL focuses on using speech biomarkers and machine learning to identify early signs of cognitive decline.
+Millions of people are affected by dementia, and early detection can make a major difference in treatment planning and long-term outcomes. Project RECALL focuses on using speech biomarkers and machine learning to identify early signs of cognitive decline.
 
 To support this research, we needed a way to collect high-quality voice data from patients in a simple, wearable format. The goal of this hardware project is not to run the machine learning model directly on the device, but to create the hardware and data pipeline needed for future analysis.
 
